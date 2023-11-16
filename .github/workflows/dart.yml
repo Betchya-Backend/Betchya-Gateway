@@ -32,6 +32,10 @@ jobs:
         run: dart test
         working-directory: ./server
 
+      - name: Create Build Directory if it doesnt exsist
+        run: mkdir -p ./server/build
+        working-directory: ./server
+
       - name: Build
         run: dart compile exe bin/server.dart -o build/server
         working-directory: ./server
