@@ -10,7 +10,7 @@ final _router = Router()
   ..get('/echo/<message>', _echoHandler);
 
 Response _rootHandler(Request req) {
-  print("testing");
+  print("testing once more");
   return Response.ok('Hello, World!\n');
 }
 
